@@ -19,3 +19,11 @@ C:\Users\veymar\Desktop\parcial 2\Parcial2Esa\CpParcial2Esa\obj\Debug\CpParcial2
 C:\Users\veymar\Desktop\parcial 2\Parcial2Esa\CpParcial2Esa\obj\Debug\CpParcia.6D687FE1.Up2Date
 C:\Users\veymar\Desktop\parcial 2\Parcial2Esa\CpParcial2Esa\obj\Debug\CpParcial2Esa.exe
 C:\Users\veymar\Desktop\parcial 2\Parcial2Esa\CpParcial2Esa\obj\Debug\CpParcial2Esa.pdb
+C:\Users\veymar\Desktop\Parcial2Esa\Parcial2Esa\CpParcial2Esa\obj\Debug\CpParcial2Esa.csproj.AssemblyReference.cache
+C:\Users\veymar\Desktop\Parcial2Esa\Parcial2Esa\CpParcial2Esa\obj\Debug\CpParcial2Esa.exe.config
+C:\Users\veymar\Desktop\Parcial2Esa\Parcial2Esa\CpParcial2Esa\obj\Debug\CpParcial2Esa.FrmProgramas.resources
+C:\Users\veymar\Desktop\Parcial2Esa\Parcial2Esa\CpParcial2Esa\obj\Debug\CpParcial2Esa.Properties.Resources.resources
+C:\Users\veymar\Desktop\Parcial2Esa\Parcial2Esa\CpParcial2Esa\obj\Debug\CpParcial2Esa.csproj.GenerateResource.cache
+C:\Users\veymar\Desktop\Parcial2Esa\Parcial2Esa\CpParcial2Esa\obj\Debug\CpParcial2Esa.csproj.CoreCompileInputs.cache
+C:\Users\veymar\Desktop\Parcial2Esa\Parcial2Esa\CpParcial2Esa\obj\Debug\CpParcial2Esa.exe
+C:\Users\veymar\Desktop\Parcial2Esa\Parcial2Esa\CpParcial2Esa\obj\Debug\CpParcial2Esa.pdb

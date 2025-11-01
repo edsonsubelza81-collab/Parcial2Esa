@@ -23,6 +23,7 @@
     <Property Name="fechaEstreno" Type="DateTime" Nullable="false" Precision="0" />
     <Property Name="estado" Type="Int16" Nullable="false" />
     <NavigationProperty Name="Canal" Relationship="Self.FK_Programa_Canal" FromRole="Programa" ToRole="Canal" />
+    <Property Name="tipo" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
   </EntityType>
   <Association Name="FK_Programa_Canal">
     <End Role="Canal" Type="Self.Canal" Multiplicity="1" />

@@ -42,7 +42,6 @@
         private System.Windows.Forms.Label lblDuracion;
         private System.Windows.Forms.Label lblDescripcion;
         private System.Windows.Forms.Label lblTitulo;
-        private System.Windows.Forms.TextBox txtProductor;
         private System.Windows.Forms.DateTimePicker dtpFechaEstreno;
         private System.Windows.Forms.ErrorProvider erpTitulo;
         private System.Windows.Forms.ErrorProvider erpDescripcion;
@@ -50,6 +49,8 @@
         private System.Windows.Forms.ErrorProvider erpDuracion;
         private System.Windows.Forms.ErrorProvider erpProductor;
         private System.Windows.Forms.ErrorProvider erpFechaEstreno;
+        private System.Windows.Forms.TextBox txtTipo;
+        private System.Windows.Forms.ListBox listBox1;
     }
 }
 

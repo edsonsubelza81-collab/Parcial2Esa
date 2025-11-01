@@ -51,6 +51,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CanalCln.cs" />
     <Compile Include="ProgramCln.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

@@ -20,6 +20,7 @@
     <Property Name="duracion" Type="int" Nullable="false" />
     <Property Name="productor" Type="varchar" MaxLength="100" Nullable="false" />
     <Property Name="fechaEstreno" Type="date" Nullable="false" />
+    <Property Name="tipo" Type="varchar" MaxLength="20" />
     <Property Name="estado" Type="smallint" Nullable="false" />
   </EntityType>
   <Association Name="FK_Programa_Canal">

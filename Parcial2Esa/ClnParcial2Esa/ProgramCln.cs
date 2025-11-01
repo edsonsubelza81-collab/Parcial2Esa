@@ -31,6 +31,8 @@ namespace ClnParcial2Esa
                 existe.duracion = programa.duracion;
                 existe.productor = programa.productor;
                 existe.fechaEstreno = programa.fechaEstreno;
+                existe.Tipo = programa.Tipo;
+                
 
 
                 return context.SaveChanges();

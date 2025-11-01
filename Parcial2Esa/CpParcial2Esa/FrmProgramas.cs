@@ -41,6 +41,7 @@ namespace CpParcial2Esa
             dgvLista.Columns["duracion"].HeaderText = "Duración (min)";
             dgvLista.Columns["productor"].HeaderText = "Productor";
             dgvLista.Columns["fechaEstreno"].HeaderText = "Estreno";
+            dgvLista.Columns["tipo"].HeaderText = "Tipo";
             dgvLista.Columns["usuarioRegistro"].HeaderText = "Usuario Registro";
             dgvLista.Columns["fechaRegistro"].HeaderText = "Fecha Registro";
 
@@ -60,8 +61,7 @@ namespace CpParcial2Esa
             var programa = ProgramaCln.obtenerUno(id);
             txtTitulo.Text = programa.titulo;
             txtDescripcion.Text = programa.descripcion;
-
-            txtProductor.Text = programa.productor;
+            txtTipo.Text = programa.tipo;
 
             dtpFechaEstreno.Value = programa.fechaEstreno;
 
@@ -73,7 +73,7 @@ namespace CpParcial2Esa
             txtTitulo.Clear();
             txtDescripcion.Clear();
             
-            txtProductor.Clear();
+           
             dtpFechaEstreno.Value = DateTime.Now;
         }
 
@@ -105,9 +105,10 @@ namespace CpParcial2Esa
             erpCanal.Clear();      
             erpDuracion.Clear();   
             erpProductor.Clear();  
-            erpFechaEstreno.Clear(); 
+            erpFechaEstreno.Clear();
+            erpTitulo.Clear();
 
-            
+
             if (string.IsNullOrEmpty(txtTitulo.Text))
             {
                 erpTitulo.SetError(txtTitulo, "El Título es obligatorio");
@@ -135,13 +136,6 @@ namespace CpParcial2Esa
                 esValido = false;
             }
 
-            if (string.IsNullOrEmpty(txtProductor.Text))
-            {
-                erpProductor.SetError(txtProductor, "El Productor es obligatorio");
-                esValido = false;
-            }
-
-           
             if (dtpFechaEstreno.Value > DateTime.Now)
             {
                 erpFechaEstreno.SetError(dtpFechaEstreno, "La Fecha de Estreno no puede ser futura");
@@ -169,7 +163,7 @@ namespace CpParcial2Esa
                 programa.duracion = (int)nudDuracion.Value;
 
                 
-                programa.productor = txtProductor.Text.Trim();
+               
                 programa.fechaEstreno = dtpFechaEstreno.Value.Date;
                 if (esNuevo)
                 {
@@ -236,7 +230,7 @@ namespace CpParcial2Esa
             this.btnEditar = new System.Windows.Forms.Button();
             this.btnNuevo = new System.Windows.Forms.Button();
             this.gbxDatos = new System.Windows.Forms.GroupBox();
-            this.txtProductor = new System.Windows.Forms.TextBox();
+            this.dtpFechaEstreno = new System.Windows.Forms.DateTimePicker();
             this.btnCancelar = new System.Windows.Forms.Button();
             this.btnGuardar = new System.Windows.Forms.Button();
             this.lblFechaEstreno = new System.Windows.Forms.Label();
@@ -248,7 +242,7 @@ namespace CpParcial2Esa
             this.lblDescripcion = new System.Windows.Forms.Label();
             this.lblTitulo = new System.Windows.Forms.Label();
             this.btnBuscar = new System.Windows.Forms.Button();
-            this.dtpFechaEstreno = new System.Windows.Forms.DateTimePicker();
+            this.listBox1 = new System.Windows.Forms.ListBox();
             this.gbxListado.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvLista)).BeginInit();
             this.pnlAcciones.SuspendLayout();
@@ -368,8 +362,8 @@ namespace CpParcial2Esa
             // 
             // gbxDatos
             // 
+            this.gbxDatos.Controls.Add(this.listBox1);
             this.gbxDatos.Controls.Add(this.dtpFechaEstreno);
-            this.gbxDatos.Controls.Add(this.txtProductor);
             this.gbxDatos.Controls.Add(this.btnCancelar);
             this.gbxDatos.Controls.Add(this.btnGuardar);
             this.gbxDatos.Controls.Add(this.lblFechaEstreno);
@@ -387,14 +381,12 @@ namespace CpParcial2Esa
             this.gbxDatos.TabStop = false;
             this.gbxDatos.Text = "Datos";
             // 
-            // txtProductor
+            // dtpFechaEstreno
             // 
-            this.txtProductor.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
-            this.txtProductor.Location = new System.Drawing.Point(568, 17);
-            this.txtProductor.MaxLength = 20;
-            this.txtProductor.Name = "txtProductor";
-            this.txtProductor.Size = new System.Drawing.Size(102, 20);
-            this.txtProductor.TabIndex = 11;
+            this.dtpFechaEstreno.Location = new System.Drawing.Point(526, 43);
+            this.dtpFechaEstreno.Name = "dtpFechaEstreno";
+            this.dtpFechaEstreno.Size = new System.Drawing.Size(200, 20);
+            this.dtpFechaEstreno.TabIndex = 12;
             // 
             // btnCancelar
             // 
@@ -434,9 +426,9 @@ namespace CpParcial2Esa
             this.lblProductor.AutoSize = true;
             this.lblProductor.Location = new System.Drawing.Point(413, 20);
             this.lblProductor.Name = "lblProductor";
-            this.lblProductor.Size = new System.Drawing.Size(56, 13);
+            this.lblProductor.Size = new System.Drawing.Size(31, 13);
             this.lblProductor.TabIndex = 6;
-            this.lblProductor.Text = "Productor:";
+            this.lblProductor.Text = "Tipo:";
             // 
             // cbxDuracion
             // 
@@ -504,12 +496,13 @@ namespace CpParcial2Esa
             this.btnBuscar.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnBuscar.UseVisualStyleBackColor = true;
             // 
-            // dtpFechaEstreno
+            // listBox1
             // 
-            this.dtpFechaEstreno.Location = new System.Drawing.Point(526, 43);
-            this.dtpFechaEstreno.Name = "dtpFechaEstreno";
-            this.dtpFechaEstreno.Size = new System.Drawing.Size(200, 20);
-            this.dtpFechaEstreno.TabIndex = 12;
+            this.listBox1.FormattingEnabled = true;
+            this.listBox1.Location = new System.Drawing.Point(526, 16);
+            this.listBox1.Name = "listBox1";
+            this.listBox1.Size = new System.Drawing.Size(60, 17);
+            this.listBox1.TabIndex = 13;
             // 
             // FrmProgramas
             // 

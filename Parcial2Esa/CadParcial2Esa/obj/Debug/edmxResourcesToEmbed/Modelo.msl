@@ -14,6 +14,7 @@
     <EntitySetMapping Name="Programa">
       <EntityTypeMapping TypeName="Parcial2EsaModel.Programa">
         <MappingFragment StoreEntitySet="Programa">
+          <ScalarProperty Name="tipo" ColumnName="tipo" />
           <ScalarProperty Name="id" ColumnName="id" />
           <ScalarProperty Name="idCanal" ColumnName="idCanal" />
           <ScalarProperty Name="titulo" ColumnName="titulo" />

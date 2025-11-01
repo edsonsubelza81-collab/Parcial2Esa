@@ -25,6 +25,7 @@
           <Property Name="duracion" Type="int" Nullable="false" />
           <Property Name="productor" Type="varchar" MaxLength="100" Nullable="false" />
           <Property Name="fechaEstreno" Type="date" Nullable="false" />
+          <Property Name="tipo" Type="varchar" MaxLength="20" />
           <Property Name="estado" Type="smallint" Nullable="false" />
         </EntityType>
         <Association Name="FK_Programa_Canal">
@@ -77,6 +78,7 @@
           <Property Name="fechaEstreno" Type="DateTime" Nullable="false" Precision="0" />
           <Property Name="estado" Type="Int16" Nullable="false" />
           <NavigationProperty Name="Canal" Relationship="Self.FK_Programa_Canal" FromRole="Programa" ToRole="Canal" />
+          <Property Name="tipo" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
         </EntityType>
         <Association Name="FK_Programa_Canal">
           <End Role="Canal" Type="Self.Canal" Multiplicity="1" />
@@ -134,6 +136,7 @@
           <EntitySetMapping Name="Programa">
             <EntityTypeMapping TypeName="Parcial2EsaModel.Programa">
               <MappingFragment StoreEntitySet="Programa">
+                <ScalarProperty Name="tipo" ColumnName="tipo" />
                 <ScalarProperty Name="id" ColumnName="id" />
                 <ScalarProperty Name="idCanal" ColumnName="idCanal" />
                 <ScalarProperty Name="titulo" ColumnName="titulo" />

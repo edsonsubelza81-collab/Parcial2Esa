@@ -10,3 +10,15 @@ C:\Users\veymar\Desktop\parcial 2\Parcial2Esa\CadParcial2Esa\obj\Debug\CadParcia
 C:\Users\veymar\Desktop\parcial 2\Parcial2Esa\CadParcial2Esa\obj\Debug\CadParci.DE4C07E5.Up2Date
 C:\Users\veymar\Desktop\parcial 2\Parcial2Esa\CadParcial2Esa\obj\Debug\CadParcial2Esa.dll
 C:\Users\veymar\Desktop\parcial 2\Parcial2Esa\CadParcial2Esa\obj\Debug\CadParcial2Esa.pdb
+C:\Users\veymar\Desktop\Parcial2Esa\Parcial2Esa\CadParcial2Esa\bin\Debug\CadParcial2Esa.dll.config
+C:\Users\veymar\Desktop\Parcial2Esa\Parcial2Esa\CadParcial2Esa\bin\Debug\CadParcial2Esa.dll
+C:\Users\veymar\Desktop\Parcial2Esa\Parcial2Esa\CadParcial2Esa\bin\Debug\CadParcial2Esa.pdb
+C:\Users\veymar\Desktop\Parcial2Esa\Parcial2Esa\CadParcial2Esa\bin\Debug\EntityFramework.dll
+C:\Users\veymar\Desktop\Parcial2Esa\Parcial2Esa\CadParcial2Esa\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\veymar\Desktop\Parcial2Esa\Parcial2Esa\CadParcial2Esa\bin\Debug\EntityFramework.xml
+C:\Users\veymar\Desktop\Parcial2Esa\Parcial2Esa\CadParcial2Esa\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\veymar\Desktop\Parcial2Esa\Parcial2Esa\CadParcial2Esa\obj\Debug\CadParcial2Esa.csproj.AssemblyReference.cache
+C:\Users\veymar\Desktop\Parcial2Esa\Parcial2Esa\CadParcial2Esa\obj\Debug\CadParcial2Esa.csproj.CoreCompileInputs.cache
+C:\Users\veymar\Desktop\Parcial2Esa\Parcial2Esa\CadParcial2Esa\obj\Debug\CadParci.DE4C07E5.Up2Date
+C:\Users\veymar\Desktop\Parcial2Esa\Parcial2Esa\CadParcial2Esa\obj\Debug\CadParcial2Esa.dll
+C:\Users\veymar\Desktop\Parcial2Esa\Parcial2Esa\CadParcial2Esa\obj\Debug\CadParcial2Esa.pdb
